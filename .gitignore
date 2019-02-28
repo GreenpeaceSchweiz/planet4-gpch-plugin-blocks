@@ -1,0 +1,27 @@
+
+vendor/*
+!vendor/composer
+!vendor/autoload.php
+
+# Translation backups #
+################
+/languages/*.po~
+/languages/*.pot~
+
+# Logs #
+########
+*.log
+
+# OS generated files #
+######################
+.DS_Store
+Thumbs.db
+
+# IDE generated files #
+#######################
+.idea
+
+gitflow/
+.editorconfig
+
+node_modules/

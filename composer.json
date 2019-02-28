@@ -1,0 +1,24 @@
+{
+  "name": "greenpeace-switzerland/planet4-gpch-plugin-blocks",
+  "description": "This Wordpress plugin creates additional content blocks in Planet4 for Greenpeace Switzerland.",
+  "type": "wordpress-plugin",
+  "version": "0.1.0",
+  "license": "GPL-3.0+",
+  "authors": [
+    {
+      "name": "Greenpeace Switzerland",
+      "email": "webmaster@greenpeace.org"
+    }
+  ],
+  "require-dev": {
+  },
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "P4CHBKS\\": "classes/",
+      "P4CHBKS\\Views\\": "classes/view/",
+      "P4CHBKS\\Controllers\\": "classes/controller/",
+      "P4CHBKS\\Controllers\\Blocks\\": "classes/controller/blocks"
+    }
+  }
+}
