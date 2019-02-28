@@ -6,4 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'P4CHBKS\\Controllers\\Blocks\\Controller' => $baseDir . '/classes/controller/blocks/class-controller.php',
+    'P4CHBKS\\Controllers\\Blocks\\GPCH_quote_Controller' => $baseDir . '/classes/controller/blocks/class-quote-controller.php',
+    'P4CHBKS\\Loader' => $baseDir . '/classes/class-loader.php',
+    'P4CHBKS\\Views\\View' => $baseDir . '/classes/view/class-view.php',
 );

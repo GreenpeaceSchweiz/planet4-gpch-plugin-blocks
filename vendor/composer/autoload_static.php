@@ -35,11 +35,19 @@ class ComposerStaticInit6ffbba9e7021d8aac10656abab722bcb
         ),
     );
 
+    public static $classMap = array (
+        'P4CHBKS\\Controllers\\Blocks\\Controller' => __DIR__ . '/../..' . '/classes/controller/blocks/class-controller.php',
+        'P4CHBKS\\Controllers\\Blocks\\GPCH_quote_Controller' => __DIR__ . '/../..' . '/classes/controller/blocks/class-quote-controller.php',
+        'P4CHBKS\\Loader' => __DIR__ . '/../..' . '/classes/class-loader.php',
+        'P4CHBKS\\Views\\View' => __DIR__ . '/../..' . '/classes/view/class-view.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit6ffbba9e7021d8aac10656abab722bcb::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit6ffbba9e7021d8aac10656abab722bcb::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit6ffbba9e7021d8aac10656abab722bcb::$classMap;
 
         }, null, ClassLoader::class);
     }

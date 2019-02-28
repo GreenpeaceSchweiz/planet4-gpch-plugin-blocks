@@ -89,12 +89,6 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 require_once __DIR__ . '/vendor/autoload.php';
 require_once ABSPATH . 'wp-admin/includes/plugin.php';
 
-// autoload doesn't work
-require_once __DIR__ . '/classes/class-loader.php';
-require_once __DIR__ . '/classes/view/class-view.php';
-require_once __DIR__ . '/classes/controller/blocks/class-controller.php';
-require_once __DIR__ . '/classes/controller/blocks/class-quote-controller.php';
-
 /*
 ==========================
     L O A D  P L U G I N
